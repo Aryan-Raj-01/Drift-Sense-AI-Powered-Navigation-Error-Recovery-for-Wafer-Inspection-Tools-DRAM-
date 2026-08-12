@@ -1,0 +1,344 @@
+# Drift-Sense resolved config
+# schema 1.0.0  hash c3f11f8967ae
+HASH_EXCLUDED:
+- runtime
+- output
+acquisition:
+  ar1_coefficient: 0.85
+  die_extent_nm: 150000.0
+  edge_margin_px: 60.0
+  field_distortion_cells:
+    hi: 5
+    lo: 2
+  field_distortion_px:
+    hi: 1.2
+    lo: 0.0
+    log: false
+  ref_drift_nm_sigma: 1.2
+  ref_jitter_px_sigma: 0.45
+  ref_mag_error_sigma: 0.01
+  relative_rotation_deg_sigma: 1.6
+  search_drift_nm_sigma: 6.0
+  search_jitter_px_sigma: 0.55
+  search_mag_error_sigma: 0.004
+  search_rotation_deg_sigma: 0.35
+defects:
+  size_nm:
+    hi: 34.0
+    lo: 14.0
+    log: false
+  types:
+  - missing_via
+  - extra_via
+  - bridge
+  - line_break
+dram:
+  bl_pitch_ratio:
+    hi: 1.35
+    lo: 0.75
+    log: false
+  bl_width_frac:
+    hi: 0.52
+    lo: 0.34
+    log: false
+  broken_line_rate:
+    hi: 0.02
+    lo: 0.0
+    log: false
+  contact_diam_frac:
+    hi: 0.48
+    lo: 0.26
+    log: false
+  level_bg:
+    hi: 0.28
+    lo: 0.14
+    log: false
+  level_bitline:
+    hi: 0.78
+    lo: 0.58
+    log: false
+  level_contact:
+    hi: 0.97
+    lo: 0.8
+    log: false
+  level_wordline:
+    hi: 0.58
+    lo: 0.42
+    log: false
+  missing_contact_rate:
+    hi: 0.03
+    lo: 0.0
+    log: false
+  wl_pitch_nm:
+    hi: 170.0
+    lo: 70.0
+    log: false
+  wl_width_frac:
+    hi: 0.52
+    lo: 0.34
+    log: false
+finfet:
+  broken_fin_rate:
+    hi: 0.025
+    lo: 0.0
+    log: false
+  epi_diam_frac:
+    hi: 0.56
+    lo: 0.32
+    log: false
+  fin_pitch_nm:
+    hi: 95.0
+    lo: 42.0
+    log: false
+  fin_width_frac:
+    hi: 0.42
+    lo: 0.26
+    log: false
+  gate_count:
+    hi: 2
+    lo: 1
+  gate_pitch_ratio:
+    hi: 5.0
+    lo: 2.4
+    log: false
+  gate_width_frac:
+    hi: 0.34
+    lo: 0.2
+    log: false
+  level_bg:
+    hi: 0.28
+    lo: 0.14
+    log: false
+  level_epi:
+    hi: 0.98
+    lo: 0.82
+    log: false
+  level_fin:
+    hi: 0.68
+    lo: 0.5
+    log: false
+  level_gate:
+    hi: 0.9
+    lo: 0.7
+    log: false
+  level_sti:
+    hi: 0.4
+    lo: 0.18
+    log: false
+  sti_period_nm:
+    hi: 2200.0
+    lo: 600.0
+    log: false
+  sti_width_nm:
+    hi: 260.0
+    lo: 80.0
+    log: false
+hard_fraction: 1.0
+landmarks:
+  bright_probability: 0.55
+  density:
+    hi: 0.75
+    lo: 0.35
+    log: false
+  size_bucket_nm: 90.0
+  size_nm:
+    hi: 430.0
+    lo: 170.0
+    log: false
+  spacing_nm:
+    hi: 1800.0
+    lo: 950.0
+    log: false
+  types:
+  - pad
+  - cross
+  - tee
+  - ell
+  - ring
+  - block
+  - hbar
+  - vbar
+macro:
+  level:
+    hi: 0.95
+    lo: 0.62
+    log: false
+  pitch_aspect:
+    hi: 1.4
+    lo: 0.7
+    log: false
+  pitch_nm:
+    hi: 3800.0
+    lo: 1400.0
+    log: false
+  probability: 0.85
+  width_nm:
+    hi: 260.0
+    lo: 90.0
+    log: false
+noise_boost: 1.0
+output:
+  format: png
+  png_compress_level: 1
+  shard_size: 1000
+  write_csv: true
+  write_parquet: true
+process:
+  cd_drift_frac:
+    hi: 0.06
+    lo: 0.0
+    log: false
+  cd_drift_period_nm:
+    hi: 20000.0
+    lo: 3000.0
+    log: false
+  ler_amp_nm:
+    hi: 3.0
+    lo: 0.8
+    log: false
+  ler_harmonics: 3
+  ler_min_px_nm: 4.0
+  ler_wavelength_nm:
+    hi: 600.0
+    lo: 40.0
+    log: false
+ref_optics:
+  astigmatism_angle_deg:
+    hi: 180.0
+    lo: 0.0
+    log: false
+  astigmatism_ratio:
+    hi: 1.5
+    lo: 1.0
+    log: false
+  brightness:
+    hi: 0.2
+    lo: 0.08
+    log: false
+  charging:
+    hi: 0.12
+    lo: 0.02
+    log: false
+  charging_cells:
+    hi: 9
+    lo: 4
+  contrast:
+    hi: 0.78
+    lo: 0.45
+    log: false
+  detector_nonuniformity:
+    hi: 0.06
+    lo: 0.0
+    log: false
+  dose_e_per_px:
+    hi: 700.0
+    lo: 120.0
+    log: true
+  edge_gain:
+    hi: 0.85
+    lo: 0.25
+    log: false
+  edge_sigma_px:
+    hi: 2.2
+    lo: 0.8
+    log: false
+  gamma:
+    hi: 1.2
+    lo: 0.85
+    log: false
+  illumination_gradient:
+    hi: 0.12
+    lo: 0.0
+    log: false
+  invert_probability: 0.06
+  motion_blur_probability: 0.15
+  motion_blur_px:
+    hi: 1.5
+    lo: 0.0
+    log: false
+  psf_sigma_px:
+    hi: 2.6
+    lo: 1.1
+    log: false
+  read_noise:
+    hi: 0.022
+    lo: 0.006
+    log: false
+  stripe_noise:
+    hi: 0.01
+    lo: 0.002
+    log: false
+runtime:
+  blas_threads: 1
+  chunk_size: 8
+  start_method: fork
+  workers: 8
+schema_version: 1.0.0
+search_optics:
+  astigmatism_angle_deg:
+    hi: 180.0
+    lo: 0.0
+    log: false
+  astigmatism_ratio:
+    hi: 1.8
+    lo: 1.0
+    log: false
+  brightness:
+    hi: 0.2
+    lo: 0.08
+    log: false
+  charging:
+    hi: 0.22
+    lo: 0.05
+    log: false
+  charging_cells:
+    hi: 9
+    lo: 4
+  contrast:
+    hi: 0.78
+    lo: 0.45
+    log: false
+  detector_nonuniformity:
+    hi: 0.06
+    lo: 0.0
+    log: false
+  dose_e_per_px:
+    hi: 110.0
+    lo: 22.0
+    log: true
+  edge_gain:
+    hi: 0.85
+    lo: 0.25
+    log: false
+  edge_sigma_px:
+    hi: 2.2
+    lo: 0.8
+    log: false
+  gamma:
+    hi: 1.2
+    lo: 0.85
+    log: false
+  illumination_gradient:
+    hi: 0.12
+    lo: 0.0
+    log: false
+  invert_probability: 0.06
+  motion_blur_probability: 0.25
+  motion_blur_px:
+    hi: 2.5
+    lo: 0.0
+    log: false
+  psf_sigma_px:
+    hi: 1.3
+    lo: 0.55
+    log: false
+  read_noise:
+    hi: 0.055
+    lo: 0.018
+    log: false
+  stripe_noise:
+    hi: 0.022
+    lo: 0.004
+    log: false
+styles:
+- dram

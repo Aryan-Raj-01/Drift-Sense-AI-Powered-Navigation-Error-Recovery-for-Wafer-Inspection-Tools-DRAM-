@@ -1,0 +1,22 @@
+# Core -- dataset generation, manifest handling, classical matching
+numpy>=1.24
+opencv-python-headless>=4.8      # filtering, PNG I/O, resize; use opencv-python for GUI
+scipy>=1.10                      # optional accelerations; not load-bearing
+pandas>=2.0                      # manifest -> DataFrame / CSV, split.csv
+pyarrow>=14.0                    # labels.parquet
+PyYAML>=6.0                      # config files
+tqdm>=4.65                       # progress bars (falls back to plain prints)
+Pillow>=10.0                     # PNG fallback when OpenCV is absent
+
+# Training -- required for driftsense.localize.train / infer_dl / eval_dl
+# NOT pip-installable from this line alone on Windows with CUDA -- install
+# separately first with the matching index URL, then this file's remaining
+# packages:
+#   pip install torch --index-url https://download.pytorch.org/whl/cu124
+# CPU-only fallback (no GPU / no CUDA):
+#   pip install torch --index-url https://download.pytorch.org/whl/cpu
+torch>=2.4
+
+# Export -- optional, only if you use these exporters
+# tensorflow>=2.13               # driftsense.exporters.export_tfrecord
+# ultralytics>=8.0               # if you want to train the YOLO export
